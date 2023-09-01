@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24X7 fitness</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courgette&family=Merienda:wght@500&family=Rowdies:wght@300&family=Satisfy&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+    body {
+        /* CSS reset */
+        margin: 0px;
+        padding: 0px;
+        background: url(img/IsR6Au.webp);
+        height: 2300px;
+    }
+
+    .main {
+        height: 100px;
+        background-color: black;
+    }
+
+    .left {
+        position: absolute;
+        left: 35px;
+        top: 40px;
+        display: inline-block;
+    }
+
+    .left img {
+        margin-left: 12px;
+        border-radius: 20px;
+        width: 40px;
+    }
+
+    .left div {
+        color: white;
+        text-align: center;
+        font-family: 'Satisfy';
+        font-size: 14px;
+        line-height: 2;
+
+
+    }
+
+    .mid {
+
+        display: block;
+        width: 40%;
+        margin: 20px auto;
+    }
+
+    .right {
+        position: absolute;
+        right: 35px;
+        top: 50px;
+        display: inline-block;
+    }
+
+    .navbar {
+        display: inline-block;
+        margin-top: 30px;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 17px;
+        font-family: 'Satisfy';
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        font-size: 24px;
+        padding: 40px 20px;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(204, 106, 15);
+    }
+
+    .btn {
+        font-family: 'Satisfy';
+        margin: 0px 10px;
+        background-color: black;
+        color: white;
+        padding: 6px 8px;
+        border: 2px solid white;
+        border-radius: 6px;
+        font-size: 15px;
+        cursor: pointer;
+
+    }
+
+    .btn:hover {
+        background-color: rgb(204, 106, 15);
+    }
+
+    .container {
+        border: 2px solid wheat;
+        margin: 100px 50px;
+        padding: 65px 65px;
+        width: 35%;
+        border-radius: 10px;
+        border-color: white;
+    }
+
+    .container h2 {
+        color: white;
+        font-family: 'Satisfy';
+        font-size: 25px;
+    }
+
+    .form-group input {
+        font-family: 'Satisfy', cursive;
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 22px;
+        border-radius: 8px;
+
+    }
+
+    .container h2 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        margin: auto;
+
+    }
+
+    .second-container {
+        height: 490px;
+        border: 2px solid white;
+        background-color: white;
+    }
+
+    .second-container h1 {
+        text-align: center;
+        color: rgb(204, 106, 15);
+    }
+
+    .second-container h2 {
+        text-align: center;
+        color: rgb(47, 45, 45)
+    }
+
+    .heading {
+        margin-top: 90px;
+    }
+
+    .second-container ul {
+        list-style: none;
+    }
+
+    .content li {
+        display: inline-block;
+        padding: 65px 65px;
+
+    }
+
+    .content li img {
+        margin: auto;
+        height: 95px;
+    }
+
+    .third-container h1 {
+        color: white;
+        font-size: 50px;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .third-container h2 {
+        color: rgb(204, 106, 15);
+        font-size: 40px;
+        text-align: center;
+
+    }
+
+    .third-container p {
+        width: 60%;
+        margin: auto;
+        margin-top: 40px;
+        font-size: 25px;
+        color: white;
+    }
+
+
+    .btn-1 {
+        background-color: rgb(204, 106, 15);
+        color: white;
+        padding: 10px 14px;
+        border: 2px solid white;
+        border-radius: 6px;
+        font-size: 15px;
+        cursor: pointer;
+
+    }
+
+    .btn-1:hover {
+        background-color: black;
+    }
+
+    .third-container button {
+        display: block;
+        margin: auto;
+        margin-top: 50px;
+
+    }
+
+    .hours-of-operation {
+        padding: 25px;
+        width: 50%;
+        display: block;
+        margin: auto;
+        text-align: center;
+        margin-top: 130px;
+        background-color: rgb(204, 106, 15);
+
+    }
+
+    .hours-of-operation h1 {
+        color: rgb(7, 3, 1);
+        font-size: 60px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .hours-of-operation-box ul {
+        list-style: none;
+
+    }
+
+    .hours-of-operation-box ul li {
+        font-size: 35px;
+    }
+
+    .fourth-container {
+        margin-top: 150px;
+        height: 460px;
+        background-color: white;
+    }
+
+    .fourth-container div{
+        display: inline-block;
+        margin: 60px;
+
+    }
+    
+    .bottom-logo img{
+        width: 200px;
+        margin-left: 100px;
+        border-radius: 50px;
+    }
+
+    .bottom-logo p{
+        margin-top: 10px;
+        margin-left: 80px;
+        color: black;
+        font-size: 50px;
+        font-family: 'Satisfy'
+    }
+
+    .contact-info{
+        position: absolute;
+        left: 500px;
+    }
+
+    .contact-info h1{
+        font-size: 50px;
+    }
+
+    .contact-info span{
+        font-size: 20px;
+    }
+
+    .menu-info{
+        position: absolute;
+        right: 200px;
+    }
+
+    .menu-info h1{
+        font-size: 40px;
+    }
+
+    .menu-info span{
+        font-size: 20px;
+    }
+
+
+
+</style>
+
+<body>
+    <div class="main">
+        <div class="left">
+            <img src="img/imogi180500240.webp" alt="">
+            <div>24X7 fitness</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Parameter</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+        </div>
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <h2>Join the best gym of Varanasi now!!</h2>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Name">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Age">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Gender">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Phone no.">
+        </div>
+        <button class="btn">Submit</button>
+    </div>
+
+    <div class="second-container">
+        <div class="heading">
+            <h2>We can give you</h2>
+            <h1>Much More Than Others</h1>
+        </div>
+        <ul class="content">
+            <li><img src="img/icons8-india-map-50.png" alt="">
+                <h4>15 States</h4>
+            </li>
+            <li><img src="img/icons8-gym-building-68.png" alt="">
+                <h4>50 Cities</h4>
+            </li>
+            <li><img src="img/icons8-guru-50.png" alt="">
+                <h4>Yoga Sessions</h4>
+            </li>
+            <li><img src="img/icons8-timing-64.png" alt="">
+                <h4>Flexible timings</h4>
+            </li>
+            <li><img src="img/icons8-people-50.png" alt="">
+                <h4>Group Program</h4>
+            </li>
+            <li><img src="img/icons8-suplement-64.png" alt="">
+                <h4>Health Suplements</h4>
+            </li>
+        </ul>
+    </div>
+
+    <div class="third-container">
+        <h1>Welcome to 24X7 fitness Gym</h1>
+        <h2>Fitness & Health</h2>
+        <p>24X7 fitness offers a personalized, accessible, and inclusive place for your workout! Achieve your individual
+            fitness goals under the supervision of certified trainers Get added benefits of feature-loaded AF workouts
+            App absolutely free with your membership.</p>
+        <button class="btn-1">Learn More</button>
+    </div>
+
+    <div class="hours-of-operation">
+        <h1>Hours of operation</h1>
+        <div class="hours-of-operation-box">
+            <ul>
+                <li>
+                    <div>
+                        <span>
+                            Monday- Thursday </span>
+                        <span class="separator">--</span>
+                        <span>[5:30 AM - 9:30 PM]</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span>
+                            Friday </span>
+                        <span class="separator">--</span>
+                        <span>[5:30 AM - 8:30 PM]</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span>
+                            Saturday </span>
+                        <span class="separator">--</span>
+                        <span>[8:00 AM - 8:00 PM]</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span>
+                            Sunday </span>
+                        <span class="separator">--</span>
+                        <span>[8:00 AM - 5:00 PM]</span>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="fourth-container">
+        <div class="bottom-logo">
+            <img src="img/imogi180500240.webp" alt="">
+            <p>24X7 fitness</p>
+        </div>
+        <div class="contact-info">
+            <h1>CONTACT US</h1>
+            <span>Lanka gate B.H.U xyx building <br>221005</span>
+            <br><br>
+            <span>000-111-2222</span>
+            <br><br>
+            <span>27X7fitness@gmail.com</span>
+        </div>
+        <div class="menu-info">
+            <h1>MENU</h1>
+            <span>Our Facility</span>
+            <br><br>
+            <span>Careers</span>
+            <br><br>
+            <span>Partnership</span>
+            <br><br>
+            <span>Amenities</span>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
